@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+  
+<body id="body">
+<nav class="navbar">
+  <ul class="nav-left">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Messages</a></li>
+    <li><a href="#">Notifications</a></li>
+  </ul>
+
+  <div class="nav-search">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <div class="nav-profile">
+    <img src="" alt="Profile" onclick="toggleMenu()">
+  </div>
+
+</nav>
+
+<div class="add-post">
+  <div class="post-header">
+     <img src="" alt="User" class="profile-img">
+
+  </div>
+
+  <div class="post-actions">
+    <label class="upload-btn">
+      <i class="fa fa-camera" aria-hidden="true"></i> Add Image
+      <input type="file" hidden>
+    </label>
+
+
+    <button class="post-btn">Post</button>
+  </div>
+</div>
+
+<div class="posts-container">
+
+  <!-- Post 1 -->
+  <div class="post">
+    <div class="post-header">
+       <img src="" alt="User" class="profile-img">
+        <h3 class="username">John Doe</h3>
+        <p class="time">2 hours ago</p>
+      </div>
+
+    <p class="post-text">
+      This is my first post! Loving this platform 😀
+    </p>
+
+    <img src="" class="post-image">
+
+    <div class="post-actions">
+      <button><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</button>
+      <button><i class="fa fa-commenting" aria-hidden="true"></i> Comment</button>
+      <button><i class="fa fa-share" aria-hidden="true"></i> Share</button>
+    </div>
+  </div>
+
+  <!-- Post 2 -->
+  <div class="post">
+    <div class="post-header">
+      <img src="" class="profile-img">
+      <div>
+        <h3 class="username">Emma Smith</h3>
+        <p class="time">5 hours ago</p>
+      </div>
+    </div>
+
+    <p class="post-text">
+      Beautiful sunset today 🌅✨
+    </p>
+<img src="" class="post-image">
+    <div class="post-actions">
+      <button><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</button>
+      <button><i class="fa fa-commenting" aria-hidden="true"></i> Comment</button>
+      <button><i class="fa fa-share" aria-hidden="true"></i> Share</button>
+    </div>
+  </div>
+<!-- Load More Button -->
+  <button class="load-more">Load More</button>
+</div>
+
+
+
+
+<div class="sidebar">
+  <h2>Menu</h2>
+  <ul>
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="#">Messages</a></li>
+    <li><a href="#">Settings</a></li>
+    <li><a href="#">Notifications</a></li>
+    <li><a href="#">Friends</a></li>
+    <li><a href="#">Groups</a></li>
+    <li><a href="#">Posts</a></li>
+    <li><a href="#">Saved</a></li>
+    <li><a href="#">Help</a></li>
+    <!-- Add as many items as you want -->
+  </ul>
+</div>
+ 
+<div class="right-sidebar">
+  
+  <div class="sidebar-section">
+    <h3>Latest News</h3>
+    <ul>
+      <li><a href="#">Breaking: New features released today</a></li>
+      <li><a href="#">Tech stocks on the rise</a></li>
+      <li><a href="#">AI changing the world rapidly</a></li>
+    </ul>
+  </div>
+
+  <div class="sidebar-section">
+    <h3>Advertisement</h3>
+    <div class="ad-box">
+      <p>Your Ad Here</p>
+    </div>
+  </div>
+
+</div>
+<!-- SETTINGS POPUP MENU -->
+  <div class="settings-menu" id="settingsMenu">
+    <div class="settings-user">
+      <img src="" class="user-popup-img">
+ <a href="profile.html" style="color: black; text-decoration: none;">See Your Profile</a>
+    </div>
+
+    <hr>
+
+    <div class="menu-item">
+      <span><i class="fa fa-moon-o" aria-hidden="true"></i> Dark Mode</span>
+      <label class="switch">
+        <input type="checkbox" onclick="toggleTheme()">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="menu-item">
+      <span><i class="fa fa-cog" aria-hidden="true"></i> Settings</span>
+    </div>
+
+    <div class="menu-item">
+      <span><i class="fa fa-sign-in" aria-hidden="true"></i> LogIn</span>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
